@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>DevOps for Consistent Results</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/kuali-days.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section data-background-image="img/title-background.jpg" class="largefooter">
+              <h3 style="margin-top: 5%; margin-bottom: 3em; text-align: left; color: white;">DevOps for Consistent Results</h3>
+              <div style="float: left; text-align: left; color: white">
+                <!-- <p style="font-size: smaller;">https://bit.ly/32LT4M6</p> -->
+                <strong>James Bennett</strong><br /><small>Manager, Enterprise Systems Integration<br />Indiana University</small>
+              </div>
+          </section>
+          <section>
+            <h3>Who am I?</h3>
+            <ul>
+              <li>Software engineer turned manager</li>
+              <li>My team primarily uses Java & Node</li>
+              <li>Been working with Kuali software (mostly Rice) since 2010</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Agenda</h3>
+            <ul>
+              <li>Quick intro and history</li>
+              <li>Containerized workloads</li>
+              <li>Next steps for us</li>
+              <li>Q&A</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section data-background-image="img/green-divider.jpg">
+            <h2 style="color: white;">Quick Intro and History</h2>
+          </section>
+          <section>
+            <h3>Definition</h3>
+            <blockquote style="width: 100%;">
+              &ldquo;A disciplined approach to software development and delivery in which operations and development engineers participate together in the entire service lifecycle, from design through the development process to production support.&rdquo;
+            </blockquote>
+          </section>
+          <section>
+            <h3>Motivation</h3>
+            <ul>
+              <li class="fragment fade-in-then-semi-out">Applications are not getting simpler</li>
+              <li class="fragment fade-in-then-semi-out">Innovate and deliver faster</li>
+              <li class="fragment fade-in-then-semi-out">Automate the mundane</li>
+              <li class="fragment fade-in-then-semi-out">Recover gracefully when things go wrong</li>
+              <li class="fragment fade-in-then-semi-out">Learn from our users & apps</li>
+            </ul>
+          </section>
+          <section>
+            <h3>The Three Ways</h3>
+            <ul>
+              <li class="fragment fade-in-then-semi-out">Principles of Flow</li>
+              <li class="fragment fade-in-then-semi-out">Principles of Feedback</li>
+              <li class="fragment fade-in-then-semi-out">Principles of Continuous Learning</li>
+            </ul>
+          </section>
+          <section data-background-transition="none" data-background-image="img/devops-001.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-002.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-003.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-004.png" data-background-size="contain"></section>
+          <section>
+            <h3>Feedback Loops</h3>
+            <img src="img/feedback-loops.png" style="width: 75%;" />
+          </section>
+          <section>
+            <h3>Continuous Integration</h3>
+            <ul>
+                <li class="fragment fade-in-then-semi-out">Unit/Integration tests</li>
+                <li class="fragment fade-in-then-semi-out">Documentation/Contract tests</li>
+                <li class="fragment fade-in-then-semi-out">Functional tests</li>
+                <li class="fragment fade-in-then-semi-out">Accessibility tests</li>
+                <li class="fragment fade-in-then-semi-out">Security scans</li>
+                <li class="fragment fade-in-then-semi-out">Deployments</li>
+                <li class="fragment fade-in-then-semi-out">Dependency updates</li>
+            </ul>
+          </section>
+          <section data-background-transition="none" data-background-image="img/devops-005.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-006.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-007.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-008.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-009.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-010.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-011.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-012.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-013.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-014.png" data-background-size="contain"></section>
+          <section>
+            <h3>Functional Orientation</h3>
+            <img src="img/functional-organization.jpg" style="width: 90%;" />
+          </section>
+          <section>
+            <h3>Deployment flow</h3>
+            <ul>
+                <li class="fragment fade-in-then-semi-out">Mouse clicks from pull request to production</li>
+                <li class="fragment fade-in-then-semi-out">Tests give confidence</li>
+                <li class="fragment fade-in-then-semi-out">Deployments are unreliable</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Value Stream Mapping</h3>
+            <img src="img/redis-value-stream.png" style="width: 90%;" />
+          </section>
+        </section>
+        <section>
+          <section data-background-image="img/teal-divider.jpg">
+            <h2 style="color: white;">Containerized Workloads</h2>
+          </section>
+          <section>
+            <img src="img/dilbert-on-containers.jpg" />
+          </section>
+          <section>
+            <h3>Why Containers?</h3>
+            <span class="fragment fade-in">Containers are popular because they are:</span>
+            <ul>
+                <li class="fragment fade-in-then-semi-out">Flexible</li>
+                <li class="fragment fade-in-then-semi-out">Lightweight</li>
+                <li class="fragment fade-in-then-semi-out">Portable</li>
+                <li class="fragment fade-in-then-semi-out">Loosely Coupled</li>
+                <li class="fragment fade-in-then-semi-out">Scalable</li>
+                <li class="fragment fade-in-then-semi-out">Secure</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Immutable Infrastructure<br />&<br />Infrastructure as Code</h3>
+          </section>
+          <section data-background-transition="none" data-background-image="img/devops-015.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-016.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-017.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-018.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-019.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-020.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-021.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-022.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-023.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-024.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-025.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-026.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-027.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-028.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-029.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-030.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-031.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-032.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-033.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-034.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-035.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-036.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-037.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-038.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-039.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-040.png" data-background-size="contain"></section>
+        </section>
+        <section>
+          <section data-background-image="img/blue-divider.jpg">
+            <h2 style="color: white;">Next Steps</h2>
+          </section>
+          <section data-background-transition="none" data-background-image="img/devops-042.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-043.png" data-background-size="contain"></section>
+          <section data-background-transition="none" data-background-image="img/devops-044.png" data-background-size="contain"></section>
+        </section>
+        <section data-background-image="img/purple-divider.jpg">
+          <h2 style="color: white;">Questions?</h2>
+        </section>
+        <section data-background-image="img/thank-you.jpg" class="largefooter">
+          <h2 style="color: white; text-transform: none; text-align: left; text-shadow: none;">Thank you.</h2>
+          <p style="float: left; color: white; text-align: left; font-size: smaller; text-shadow: none;">James Bennett - jawbenne@iu.edu</p>
+          <p class="fragment" style="width: 70%; float: left; color: #ccc; text-align: left; font-size: .7em; text-shadow: none;">Please provide us with valuable feedback to ensure high-quality programming for the next Kuali Days!<br />Complete the survey for this session in the Kuali Days app.</p>
+        </section>
+        <div id="footer" class="footer" style="display: none;">
+          <img src="img/kd-logo.png" />
+        </div>
+        <div id="large-footer" class="footer" style="display: none;">
+          <img src="img/kd-logo-large.png" />
+        </div>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        history: true,
+        controls: true,
+        progress: true,
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          { src: "plugin/highlight/highlight.js", async: true }
+        ]
+      });
+      Reveal.addEventListener( 'slidechanged', function( event ) {
+        var suppressFooter = event.currentSlide.classList.contains('nofooter');
+        var largeFooter = event.currentSlide.classList.contains('largefooter');
+        var hasBackgroundImage = event.currentSlide.attributes.getNamedItem('data-background-image') !== null;
+        if(largeFooter) {
+          document.getElementById('footer').style.display = 'none';
+          document.getElementById('large-footer').style.display = 'flex';
+        } else if(suppressFooter || hasBackgroundImage) {
+					document.getElementById('footer').style.display = 'none';
+          document.getElementById('large-footer').style.display = 'none';
+				} else {
+          document.getElementById('footer').style.display = 'flex';
+          document.getElementById('large-footer').style.display = 'none';
+				}
+			} );
+    </script>
+  </body>
+</html>

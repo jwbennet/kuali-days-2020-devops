@@ -1,0 +1,121 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #666;
+$headingColor: #00b586;
+
+$mainFontSize: 42px;
+$mainFont: 'Roboto', 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Roboto Slab', 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal p {
+  font-weight: 300;
+  text-shadow: 1px 1px white;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-weight: 700;
+}
+
+.reveal p code {
+  background-color: white;
+  display: inline-block;
+  border-radius: 7px;
+}
+
+.reveal small code {
+  vertical-align: baseline;
+}
+
+.reveal .slides .footer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 2%;
+  right: 0%;
+  color: #b7b7b7;
+  text-transform: uppercase;
+  font-size: 60%;
+
+  img {
+    width: 12em;
+  }
+
+  span {
+    margin-left: 3%;
+    margin-top: 4%;
+  }
+}
+
+.textbox {
+  background: rgba(0, 0, 0, 0.6);
+  color: white !important;
+  padding: 4px 8px;
+  margin: 0;
+}
+
+// .reveal .slides section .fragment.highlight-red.visible,
+// .reveal .slides section .fragment.highlight-current-red.current-fragment {
+//   color: $blood;
+// }
+
+.left-col {
+  width: 50%;
+  float: left;
+}
+
+.right-col {
+  width: 45%;
+  float: right;
+}
+
+img {
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;  
+}
